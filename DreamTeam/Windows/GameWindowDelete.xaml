@@ -1,0 +1,16 @@
+﻿<Window x:Class="DreamTeam.Windows.GameWindowDelete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="GameWindowDelete" Height="252" Width="514">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="DeleteBtn" Content="Verwijderen"  Margin="80,146,0,0" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="81" Click="DeleteBtn_Click"/>
+        <Label Content="Weet je zeker dat je &#xD;&#xA;de game wilt verwijderen?" FontFamily="Open Sans" FontSize="30" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Width="393" Height="124" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="DiscardBtn" Content="Annuleren"  Margin="361,146,0,0" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="81" Click="DiscardBtn_Click"/>
+    </Grid>
+</Window>

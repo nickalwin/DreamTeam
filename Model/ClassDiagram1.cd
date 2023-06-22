@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Model.SQLData.ChatQuerys" Collapsed="true">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAQAACBAAAAAAAAAEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>SQLData\ChatQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQLData.ConnectionQuerys" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAAAAAAAKAAAAAAAAAAAAEAAAAQAAAAAABAAA=</HashCode>
+      <FileName>SQLData\ConnectionQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQLData.GroepsChatQuerys" Collapsed="true">
+    <Position X="6.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAAAAEAACAABACQAAwAgAQIgAAACAAAAAAABAAA=</HashCode>
+      <FileName>SQLData\GroepsChatQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQLData.MatchmakingQuerys" Collapsed="true">
+    <Position X="6" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAABAAAAAQABAAAIIAAAAAAAAAACCAAAAAAAI=</HashCode>
+      <FileName>SQLData\MatchmakingQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQLData.MediaQuerys" Collapsed="true">
+    <Position X="4.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAEAAAAAACAAAAAAAAAAAAAAAIQABAA=</HashCode>
+      <FileName>SQLData\MediaQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQLData.ProfileQuerys" Collapsed="true">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tOwACCAAAGABEgASECGBCGAEIBAAAQGEBANAQCxCBCA=</HashCode>
+      <FileName>SQLData\ProfileQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQLData.SearchQuerys" Collapsed="true">
+    <Position X="2.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SQLData\SearchQuerys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.SQL">
+    <Position X="0.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAABAAAQgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SQLData\SQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Game">
+    <Position X="26.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADIAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Profile">
+    <Position X="12.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>UgECEAAgCCAYAACEAGAAACBAAAAEAQQAQABAICAAoEE=</HashCode>
+      <FileName>ProfielEnProfieldata\Profile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.GroepsChat.GroupChat">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggBAEAAAAAAAAAAAAAAAgAAAAAAAAAAE=</HashCode>
+      <FileName>GroepsChat\GroupChat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Images.Image">
+    <Position X="8.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAIAAEAQAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Images\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Images.Media">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAAAAAAAAAQDBAQAAAAAAAAAAABAAAAACQAAAAE=</HashCode>
+      <FileName>ProfielEnProfieldata\Images\Media.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Images.FileTooBigException">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Images\Media.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Images.Video">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Images\Video.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Connection">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAEAAwAAAAAAAAAAAAAACAAAAEBBAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.MatchProfile">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAACCAQAACAAEAAACAAAAAAAAAAAABAACAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\MatchProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Message">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAEAAAAAAAAAAABAAQAAAAABAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.Post">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAgAAAAAAAQABAAAAAEAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Post.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.ProfielEnProfieldata.StaticProfile" Collapsed="true">
+    <Position X="30.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\StaticProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Model.ProfielEnProfieldata.Rank">
+    <Position X="28.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Rank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Matchmaking.GamerProfile">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACEAAACAAIAACEAEAAAAAAAAAAAAAAAAFAIAAAAAI=</HashCode>
+      <FileName>Matchmaking\GamerProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Matchmaking.Users">
+    <Position X="20.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgJAAAAAAGAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matchmaking\Match.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Matchmaking.Messages" Collapsed="true">
+    <Position X="30.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAIAAIAAA=</HashCode>
+      <FileName>Matchmaking\Messages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Matchmaking.SearchCriteria">
+    <Position X="19" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Matchmaking\SearchCriteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Model.Gender" Collapsed="true">
+    <Position X="7" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aAFAwACgAZQQBQgIBEYECACEDgCQlooAEAKQQkACEAI=</HashCode>
+      <FileName>ProfielEnProfieldata\Gender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Model.Language" Collapsed="true">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>as87M4SbRn7Rlu/DyeGedwdq3J1ghQ13sosMkHSIZn8=</HashCode>
+      <FileName>ProfielEnProfieldata\Language.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Model.Nationality" Collapsed="true">
+    <Position X="9" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>61U7b4ueBnLuBPq+zc+eHC/SVA5Ut/h+vZ+tDGTe6Gc=</HashCode>
+      <FileName>ProfielEnProfieldata\Nationality.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Model.Playstyle" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAgAAAAAAAAAAAQAAAACAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Playstyle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Model.ProfielEnProfieldata.Images.ImageType" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAgAAAAIAAAAAAAAAAAACAAQBAAAAAAAAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Images\Media.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Model.ProfielEnProfieldata.ConnectionVisibility" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ProfielEnProfieldata\Visibility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

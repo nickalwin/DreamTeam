@@ -1,0 +1,28 @@
+﻿<Window x:Class="DreamTeam.Windows.Modals.ChatChangeMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows.Modals"
+        mc:Ignorable="d"
+        Title="ChatChangeMessage" Height="300" Width="500">
+    <Grid>
+        <Button x:Name="ButtonOpslaan" Content="Opslaan" HorizontalAlignment="Left" Margin="322,195,0,0" VerticalAlignment="Top" Height="50" Width="108" Background="#FFF288A4" Foreground="White" Click="ButtonOpslaan_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="ButtonVerwijderen" Content="Verwijderen" HorizontalAlignment="Left" Margin="73,195,0,0" VerticalAlignment="Top" Height="50" Width="108" Background="Red" Foreground="White" Click="ButtonVerwijderen_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Wijzig bericht&#xD;&#xA;" FontSize="30" FontFamily="Montserrat" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF444444" Width="300" Margin="0,0,0,139"/>
+        <TextBox x:Name="TextInput" TextWrapping="Wrap" VerticalAlignment="Center" Width="278" Height="41" BorderBrush="#FFB9B9B9" FontFamily="Open Sans" FontSize="24" FontWeight="Light" Padding="6,0,10,0" Margin="111,0,111,0" TextChanged="TextInput_TextChanged"/>
+
+    </Grid>
+</Window>

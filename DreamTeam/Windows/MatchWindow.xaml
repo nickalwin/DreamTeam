@@ -1,0 +1,112 @@
+﻿<Window x:Class="DreamTeam.Windows.MatchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="1080" Width="1920" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid Margin="0,-8,0,0" Height="1080" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="1633*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Height="1080" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="287">
+            <Border CornerRadius="0, 25, 25, 0" Height="1064" VerticalAlignment="Center" HorizontalAlignment="Left" Width="249">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF9CBD8"/>
+                        <GradientStop Color="#FFF288A4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Margin="0,0,0,10">
+                    <Border HorizontalAlignment="Center" Height="79" Margin="0,31,0,0" VerticalAlignment="Top" Width="182" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button Content="Profiel" Click="ProfielButton_Click" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" HorizontalAlignment="Left" Width="182"/>
+                    </Border>
+                    <Border Margin="34,157,33,818" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button x:Name="SearchButton" Content="Zoeken" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" HorizontalAlignment="Left" Width="182" Click="SearchButton_Click"/>
+                    </Border>
+                    <Border Margin="34,288,33,688" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button Content="Matches" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" HorizontalAlignment="Left" Width="182" Click="MatchesBtn_Click"/>
+                    </Border>
+                    <Border Margin="34,409,33,565" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button x:Name="GamesButton" Content="Games" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GamesButton_Click"/>
+                    </Border>
+                    <Border Margin="34,540,33,424" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                        <Button x:Name="LikesButton" Content="Likes" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="LikesButton_Click" Height="79"/>
+                    </Border>
+                    <Border Margin="34,671,33,302" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                        <Button x:Name="GroupchatButton" Content="Groepschat" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GroupchatButton_Click" Height="79"/>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+        <Label x:Name="GamerName" Content="GamerName" HorizontalContentAlignment="Center" FontSize="100" HorizontalAlignment="Left" Margin="249,0,0,864" VerticalAlignment="Bottom" Height="154" Width="1671" RenderTransformOrigin="0.504,0.548" Grid.ColumnSpan="2" FontFamily="Montserrat" MouseLeftButtonUp="GamerName_MouseLeftButtonUp"/>
+        <Image x:Name="ProfilePic" Grid.Column="1" Height="582" Margin="10,0,0,238" VerticalAlignment="Bottom" Source="/Windows/ProfielFotoPlaceHolder.png" HorizontalAlignment="Left" Width="576" MouseLeftButtonUp="GameLogo_MouseLeftButtonUp">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Windows/GameMediaPlaceHolder.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="LogOutBtn" Content="" HorizontalAlignment="Left" Margin="10,0,0,85" VerticalAlignment="Bottom" Height="98" Width="78" BorderThickness="0,0,0,0" Click="LogOutClick">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="/Assets/img/Uitloggen.png"/>
+            </Button.Background>
+        </Button>
+        <Border x:Name="BorderGamerInfo" HorizontalAlignment="Left" Height="531" Margin="614,290,0,0" VerticalAlignment="Top" Width="964" CornerRadius="20, 20, 20, 20" Grid.Column="1" MouseLeftButtonUp="BorderGamerInfo_MouseLeftButtonUp">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,2" StartPoint="0,1">
+                    <GradientStop Color="#FFF288A4"/>
+                    <GradientStop Color="#FFF2AEC1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Ellipse x:Name="CircleInfoLable" Stroke="#FFCFCFCF" Margin="3,21,927,476" Fill="#C1F1EDED" MouseLeftButtonUp="CircleInfoLable_MouseLeftButtonUp"/>
+        </Border>
+        <Image x:Name="GameIcon3" Grid.Column="1" HorizontalAlignment="Left" Height="62" Margin="651,0,0,321" VerticalAlignment="Bottom" Width="62" Source="/Assets/img/GameIconPlaceHolder2.png" MouseLeftButtonUp="GameIcon3_MouseLeftButtonUp"/>
+        <Image x:Name="GameIcon2" Grid.Column="1" HorizontalAlignment="Left" Height="62" Margin="653,0,0,413" VerticalAlignment="Bottom" Width="62" Source="/Assets/img/GameIconPlacHolder.png" MouseLeftButtonUp="GameIcon2_MouseLeftButtonUp"/>
+        <Image x:Name="GameIcon1" Grid.Column="1" HorizontalAlignment="Left" Height="62" Margin="653,517,0,0" VerticalAlignment="Top" Width="58" Source="/Assets/img/GameIconPlaceHolder3.png" MouseLeftButtonUp="GameIcon1_MouseLeftButtonUp"/>
+        <TextBlock x:Name="DescriptionBox" Grid.Column="1" HorizontalAlignment="Left" Margin="1165,302,0,0" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et ligula rutrum libero tristique facilisis et id erat. Praesent tempus quis ante vitae dapibus. Ut sit amet est mattis nunc varius luctus. Phasellus et felis luctus, volutpat nulla ac, dictum nisl. Nunc velit sapien, rhoncus ut nisl id, tempor molestie libero. Vestibulum accumsan ex et rutrum convallis. Donec tincidunt, nunc eget semper cursus, lectus sapien pellentesque sapien, ut ultricies massa nisl eget diam. In vehicula quam eros, vitae vehicula felis interdum id." VerticalAlignment="Top" Width="391" Height="498" FontSize="22" Foreground="White" FontFamily="Open Sans" TextWrapping="WrapWithOverflow" MouseLeftButtonUp="DescriptionBox_MouseLeftButtonUp"/>
+        <Label Content="Ranks en speelstijl" x:Name="GameInfoBox1" Grid.Column="1" HorizontalAlignment="Left" Margin="743,517,0,0" VerticalAlignment="Top" Width="380" Height="58" FontSize="28" FontFamily="Open Sans" Foreground="White" MouseLeftButtonUp="GameInfoBox1_MouseLeftButtonUp"/>
+        <Label Content="Ranks en speelstijl" x:Name="GameInfoBox2" Grid.Column="1" HorizontalAlignment="Left" Margin="743,611,0,0" VerticalAlignment="Top" Width="392" Height="50" FontSize="28" FontFamily="Open Sans" Foreground="White" MouseLeftButtonUp="GameInfoBox2_MouseLeftButtonUp"/>
+        <Label Content="Ranks en speelstijl" x:Name="GameInfoBox3" Grid.Column="1" HorizontalAlignment="Left" Margin="743,701,0,0" VerticalAlignment="Top" Width="416" Height="54" FontSize="28" FontFamily="Open Sans" Foreground="White" MouseLeftButtonUp="GameInfoBox3_MouseLeftButtonUp"/>
+        <Button x:Name="LikeBtn" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="1303,897,0,0" VerticalAlignment="Top" Height="143" Width="148" FontSize="36" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0" UseLayoutRounding="False" Click="LikeBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/img/LikeBtn.png" Stretch="Uniform"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="DisLikeBtn" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="121,897,0,0" VerticalAlignment="Top" Height="143" Width="148" FontSize="36" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0" UseLayoutRounding="False" Click="DisLikeBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/img/LikeBtn.png" Stretch="Uniform" TileMode="None">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="1"/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Label Content="Gender" x:Name="GenderHeader" Grid.Column="1" HorizontalAlignment="Left" Margin="654,310,0,0" VerticalAlignment="Top" Width="190" Height="50" FontSize="36" FontFamily="Montserrat" FontWeight="Light" Foreground="White" MouseLeftButtonUp="GenderHeader_MouseLeftButtonUp"/>
+        <Label Content="Man" x:Name="GenderLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="654,351,0,0" VerticalAlignment="Top" Width="405" Height="57" FontSize="36" FontFamily="Open Sans" Foreground="White" MouseLeftButtonUp="GenderLabel_MouseLeftButtonUp"/>
+        <Label Content="Leeftijd" x:Name="LeeftijdHeader" Grid.Column="1" HorizontalAlignment="Left" Margin="653,402,0,0" VerticalAlignment="Top" Width="250" Height="59" FontSize="36" FontFamily="Montserrat" FontWeight="Light" Foreground="White" MouseLeftButtonUp="LeeftijdHeader_MouseLeftButtonUp"/>
+        <Label Content="18" x:Name="LeeftijdLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="654,436,0,0" VerticalAlignment="Top" Width="203" Height="57" FontSize="36" FontFamily="Open Sans" Foreground="White" MouseLeftButtonUp="LeeftijdLabel_MouseLeftButtonUp"/>
+        <Label x:Name="InfoLable" Content="i" Grid.Column="1" HorizontalAlignment="Left" Margin="624,305,0,0" VerticalAlignment="Top" Height="41" Width="21" FontWeight="Bold" FontStyle="Italic" FontSize="24" Foreground="White" MouseLeftButtonUp="InfoLable_MouseLeftButtonUp"/>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="DreamTeam.Windows.GameWindowVoegToeDialoog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        mc:Ignorable="d"
+        Title="GameWindowVoegToeDialoog" Height="252" Width="514">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="GameChange" Content="Voeg Toe" Click="VoegToe" Margin="395,0,0,0" VerticalAlignment="Center" Height="36" HorizontalAlignment="Left" Width="81"/>
+        <ComboBox x:Name="PlayingStyle" Margin="223,0,0,0" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="131">
+            <ComboBoxItem IsSelected="True">GeenVoorkeur</ComboBoxItem>
+            <ComboBoxItem>Competitief</ComboBoxItem>
+            <ComboBoxItem>Casual</ComboBoxItem>
+            <ComboBoxItem>Beide</ComboBoxItem>
+        </ComboBox>
+        <Label Content="SpeelStijl:" FontFamily="Open Sans" FontSize="30" HorizontalAlignment="Right" Margin="0,0,158,136" VerticalAlignment="Bottom" RenderTransformOrigin="0.653,0.519"/>
+        <Label Content="Rank:" FontFamily="Open Sans" FontSize="30" HorizontalAlignment="Right" Margin="0,0,355,136" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="RankDropdown" Loaded="ComboBox_Loaded" Margin="53,0,0,0" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="131">
+        </ComboBox>
+    </Grid>
+</Window>

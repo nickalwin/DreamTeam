@@ -1,0 +1,23 @@
+﻿<Window x:Class="DreamTeam.Windows.ProfileSettingsInputLanguage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        xmlns:Dream="clr-namespace:DreamTeam"
+        xmlns:Model="clr-namespace:Model;assembly=Model"
+        mc:Ignorable="d"
+        Title="ProfileLanguagesInput" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid>
+        <Label Content=" wijzigen" Name="title" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top" Width="801" FontSize="25"/>
+        <Button x:Name="wijzig3" Content="Wijzig" Margin="452,190,131,0" Background="#FF66A3D9" FontFamily="Open Sans" FontSize="35" Foreground="Black" Height="54" VerticalAlignment="Top" Click="wijzig_Click"/>
+        <Label Content="" Name="err3" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,381,0,0" VerticalAlignment="Top" Width="800"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,116,0,27" HorizontalAlignment="Left" Width="362">
+
+            <ItemsControl x:Name="ic" Margin="0,0,0,32" Height="219"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

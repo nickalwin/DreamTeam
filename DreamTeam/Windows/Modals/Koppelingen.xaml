@@ -1,0 +1,47 @@
+﻿<Window x:Class="DreamTeam.Windows.Modals.Koppelingen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows.Modals"
+        mc:Ignorable="d"
+        Title="Koppelingen" Height="450" Width="800" Background="#FFFAF9F6">
+    <Grid>
+        <Label Content="Koppelingen" HorizontalAlignment="Center" VerticalAlignment="Top" Height="71" Width="780" FontSize="36" FontFamily="Montserrat" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF444444"/>
+        <Rectangle HorizontalAlignment="Left" Height="348" Margin="394,76,0,0" Stroke="#FF878787" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label Content="Nieuwe koppeling toevoegen" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Height="63" Width="390" FontFamily="Montserrat" FontSize="24" FontWeight="Light" FontStyle="Normal" Foreground="#FF4B4B4B"/>
+        <Label Content="Huidige koppelingen" HorizontalAlignment="Left" Margin="410,66,0,0" VerticalAlignment="Top" Height="63" Width="390" FontFamily="Montserrat" FontSize="24" FontWeight="Light" Foreground="#FF3C3C3C"/>
+        <Grid Margin="10,109,405,10">
+            <Button x:Name="AddButton" Content="Toevoegen"  Margin="88,247,0,0" VerticalAlignment="Top" Height="58" HorizontalAlignment="Left" Width="209" Background="#FFF288A4" Foreground="White" BorderBrush="{x:Null}" FontFamily="Open Sans" FontSize="30" FontWeight="Light" Click="AddButton_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBox x:Name="UsernameBox" HorizontalAlignment="Left" Margin="54,104,0,0" Text="Gebruikersnaam" TextWrapping="Wrap" VerticalAlignment="Top" Width="278" Height="41" BorderBrush="#FFB9B9B9" FontFamily="Open Sans" FontSize="24" FontWeight="Light" Padding="6,0,10,0" GotFocus="UsernameBox_GotFocus" LostFocus="UsernameBox_LostFocus"/>
+            <ComboBox x:Name="PlatformSelector" HorizontalAlignment="Left" Margin="54,52,0,0" VerticalAlignment="Top" Width="278" Height="40" FontFamily="Open Sans" SelectedIndex="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="10,3,5,3" FontWeight="Light">
+                <ComboBoxItem Content="Steam"/>
+                <ComboBoxItem Content="Discord"/>
+            </ComboBox>
+            <CheckBox x:Name="MakePublic" Content="Publiekelijk" HorizontalAlignment="Left" Margin="108,158,0,0" VerticalAlignment="Top" Height="16" Width="84" FontFamily="Open Sans" FontWeight="Light" RenderTransformOrigin="0.6,0.547">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="2" ScaleY="2" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+        </Grid>
+        <ScrollViewer x:Name="KoppelingScroller" Margin="0,109,0,0" HorizontalAlignment="Right" Width="390" Height="325" VerticalAlignment="Top">
+            <Grid x:Name="ScrollViewGrid" Height="324" Width="390" VerticalAlignment="Top"></Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

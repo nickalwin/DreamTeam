@@ -1,0 +1,123 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	  <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\img\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Remove="Assets\img\Background.png" />
+    <None Remove="Assets\img\BackgroundSolid.png" />
+    <None Remove="Assets\img\cog_icon_125323.png" />
+    <None Remove="Assets\img\GameIconPlaceHolder2.png" />
+    <None Remove="Assets\img\GameIconPlaceHolder3.png" />
+    <None Remove="Assets\img\GameIconPlacHolder.png" />
+    <None Remove="Assets\img\GameMediaPlaceHolder.png" />
+    <None Remove="Assets\img\Icon.ico" />
+    <None Remove="Assets\img\IconPNG.png" />
+    <None Remove="Assets\img\LikeBtn.png" />
+    <None Remove="Assets\img\Logo1.png" />
+    <None Remove="Assets\img\Logo_Pink.png" />
+    <None Remove="Assets\img\ProfielFotoPlaceHolder.png" />
+    <None Remove="Assets\img\Uitloggen.png" />
+    <None Remove="BackgroundSolid.png" />
+    <None Remove="Logo1.png" />
+    <None Remove="Logo_Pink.png" />
+    <None Remove="Windows\cog_icon_125323.png" />
+    <None Remove="Windows\GameMediaPlaceHolder.png" />
+    <None Remove="Windows\Modals\BackgroundSolid.png" />
+    <None Remove="Windows\ProfielFotoPlaceHolder.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\img\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\BackgroundSolid.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\cog_icon_125323.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\GameIconPlaceHolder2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\GameIconPlaceHolder3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\GameIconPlacHolder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\GameMediaPlaceHolder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\LikeBtn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\Logo1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\Logo_Pink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\img\Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\IconPNG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\ProfielFotoPlaceHolder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\img\Uitloggen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Windows\MatchWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Windows\GameWindowDelete.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Windows\Login.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Windows\ProfileSettingsInputLanguage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Windows\ProfileSettingsInputNationality.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Windows\SurveyAnswer.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="4.6.97" />
+    <PackageReference Include="EcoCore" Version="7.0.0.13717" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Windows\cog_icon_125323.png" />
+    <Resource Include="Windows\GameMediaPlaceHolder.png" />
+    <Resource Include="Windows\Modals\BackgroundSolid.png" />
+    <Resource Include="Windows\ProfielFotoPlaceHolder.png" />
+  </ItemGroup>
+
+</Project>

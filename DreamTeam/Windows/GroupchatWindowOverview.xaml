@@ -1,0 +1,45 @@
+﻿<Window x:Class="DreamTeam.Windows.GroupchatWindowOverview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        mc:Ignorable="d"
+        Title="GroupchatWindowOverview" Height="1079.4" Width="1920" WindowState="Maximized">
+    <Grid>
+        <Border CornerRadius="0, 25, 25, 0" HorizontalAlignment="Left" Width="249" Height="1064" VerticalAlignment="Top">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9CBD8"/>
+                    <GradientStop Color="#FFF288A4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Margin="0,0,0,10">
+                <Border HorizontalAlignment="Center" Height="79" Margin="0,31,0,0" VerticalAlignment="Top" Width="182" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="ProfielButton" Content="Profiel" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="ProfielButton_Click"/>
+                </Border>
+                <Border Margin="34,157,33,818" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="SearchButton" Content="Zoeken" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="SearchButton_Click"/>
+                </Border>
+                <Border Margin="34,288,33,688" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="MatchesButton" Content="Matches" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="MatchesButton_Click"/>
+                </Border>
+                <Border Margin="34,409,33,565" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="GamesButton" Content="Games" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GamesButton_Click"/>
+                </Border>
+                <Border Margin="34,540,33,424" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                    <Button x:Name="LikesButton" Content="Likes" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="LikesButton_Click" Height="79"/>
+                </Border>
+                <Border Margin="34,671,33,302" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                    <Button x:Name="GroupchatButton" Content="Groepschat" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Height="79" Click="GroupchatButton_Click"/>
+                </Border>
+            </Grid>
+        </Border>
+        <Button x:Name="NewGroup" Content="Nieuwe Group aanmaken" HorizontalAlignment="Left" Margin="315,52,0,0" VerticalAlignment="Top" Height="95" Width="267" Click="NewGroup_Click"/>
+        <ScrollViewer Margin="318,199,81,128">
+            <Grid x:Name="GroupchatGrid" Height="4342" Width="1519" Margin="0,0,0,1000">
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

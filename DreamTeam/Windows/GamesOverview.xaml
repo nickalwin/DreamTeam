@@ -1,0 +1,70 @@
+﻿<Window x:Class="DreamTeam.Windows.GamesOverview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        mc:Ignorable="d"
+        Title="GamesOverview" Height="1080" Width="1920" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid Margin="0,-8,0,0" Height="1080" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="1633*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <Border CornerRadius="0, 25, 25, 0" Height="1064" VerticalAlignment="Center" HorizontalAlignment="Left" Width="249">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF9CBD8"/>
+                        <GradientStop Color="#FFF288A4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Margin="0,0,0,10">
+                    <Border HorizontalAlignment="Center" Height="79" Margin="0,31,0,0" VerticalAlignment="Top" Width="182" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button Content="Profiel" Click="Profiel" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" HorizontalAlignment="Left" Width="182"/>
+                    </Border>
+                    <Border Margin="34,157,33,818" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button x:Name="SearchButton" Content="Zoeken" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" HorizontalAlignment="Left" Width="182" Click="SearchButton_Click"/>
+                    </Border>
+                    <Border Margin="34,288,33,688" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button x:Name="MatchesButton" Content="Matches" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" HorizontalAlignment="Left" Width="182" Click="MatchesButton_Click"/>
+                    </Border>
+                    <Border Margin="34,409,33,565" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                        <Button x:Name="GamesButton" Content="Games" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GamesButton_Click"/>
+                    </Border>
+                    <Border Margin="34,540,33,424" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                        <Button x:Name="LikesButton" Content="Likes" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="LikesButton_Click" Height="79"/>
+                    </Border>
+                    <Border Margin="34,671,33,302" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                        <Button x:Name="GroupchatButton" Content="Groepschat" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GroupchatButton_Click" Height="79"/>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+        <Label Name="overview" Content="Game Overview" HorizontalContentAlignment="Center" FontSize="100" HorizontalAlignment="Left" Margin="249,82,0,0" VerticalAlignment="Top" Height="153" Width="1671" RenderTransformOrigin="0.504,0.548" Grid.ColumnSpan="2"/>
+        <Grid Grid.Column="1" Margin="0,296,40,0">
+            
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,32">
+                
+                    <ItemsControl x:Name="ic" Margin="0,0,0,32" Height="2507">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Content="{Binding ButtonContent}" Click="OpenGamePage"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            
+        </Grid>
+        <Button x:Name="LogOutBtn" Content="" HorizontalAlignment="Left" Margin="10,897,0,0" VerticalAlignment="Top" Height="98" Width="78" BorderThickness="0,0,0,0" Click="LogOutClick">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="/Assets/img/Uitloggen.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

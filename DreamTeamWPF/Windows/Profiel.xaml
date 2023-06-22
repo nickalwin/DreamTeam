@@ -1,0 +1,77 @@
+﻿<Window x:Class="DreamTeam.Windows.Profiel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        mc:Ignorable="d"
+        Title="Profiel" Height="1078" Width="1920">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="1074" Width="1920">
+        <Border HorizontalAlignment="Left" Height="1063" VerticalAlignment="Center" Width="249" CornerRadius="0, 25, 25, 0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9CBD8"/>
+                    <GradientStop Color="#FFF288A4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Margin="0,0,0,10">
+                <Border HorizontalAlignment="Center" Height="79" Margin="0,31,0,0" VerticalAlignment="Top" Width="182" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button Content="Profiel" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070"/>
+                </Border>
+                <Border Margin="34,157,33,818" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button Content="Zoeken" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070"/>
+                </Border>
+                <Border Margin="34,288,33,688" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button Content="Matches" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070"/>
+                </Border>
+
+            </Grid>
+
+        </Border>
+        <Image HorizontalAlignment="Left" Height="291" Margin="381,66,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/ProfielFotoPlaceHolder.png"/>
+        <Border HorizontalAlignment="Left" Height="295" Margin="774,62,0,0" VerticalAlignment="Top" Width="541" CornerRadius="20, 20, 20, 20">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,2" StartPoint="0,1">
+                    <GradientStop Color="#FFF288A4"/>
+                    <GradientStop Color="#FFF2AEC1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Button" HorizontalAlignment="Left" Height="64" Margin="101,209,0,0" VerticalAlignment="Top" Width="64" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/img/GameIconPlaceHolder2.png"/>
+                </Button.Background>
+            </Button>
+        </Border>
+        <Label Content="Gamer naam" HorizontalAlignment="Left" Height="98" Margin="793,66,0,0" VerticalAlignment="Top" Width="470" FontSize="70" FontFamily="Montserrat" Foreground="White"/>
+        <Label Content="@UserID#123456" HorizontalAlignment="Left" Height="46" Margin="798,148,0,0" VerticalAlignment="Top" Width="230" IsEnabled="False" FontSize="25" FontWeight="Normal" Foreground="White" FontFamily="Open Sans"/>
+        <Button Content="" HorizontalAlignment="Left" Height="64" Margin="798,271,0,0" VerticalAlignment="Top" Width="64">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/img/GameIconPlacHolder.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Height="64" Margin="960,271,0,0" VerticalAlignment="Top" Width="64" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/img/GameIconPlaceHolder3.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Biografie" HorizontalAlignment="Left" Height="37" Margin="798,210,0,0" VerticalAlignment="Top" Width="226" Foreground="White" FontFamily="Open Sans" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="291" Margin="737,415,0,0" VerticalAlignment="Top" Width="296" Source="/Assets/img/GameMediaPlaceHolder.png"/>
+        <Image HorizontalAlignment="Left" Height="291" Margin="381,415,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png"/>
+        <Image HorizontalAlignment="Left" Height="291" Margin="1094,415,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png"/>
+        <Image HorizontalAlignment="Left" Height="291" Margin="381,729,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png"/>
+        <Image HorizontalAlignment="Left" Height="291" Margin="737,729,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png"/>
+        <Image HorizontalAlignment="Left" Height="291" Margin="1094,729,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png"/>
+        <Border HorizontalAlignment="Left" Height="958" Margin="1585,62,0,0" VerticalAlignment="Top" Width="258" CornerRadius="10, 10, 10, 10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,0" StartPoint="0,1">
+                    <GradientStop Color="#FF6681D9"/>
+                    <GradientStop Color="#FF66A3D9" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label Content="Vrienden" HorizontalAlignment="Center" Height="60" Margin="0,39,0,0" VerticalAlignment="Top" Width="182" FontSize="40" Foreground="White" HorizontalContentAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,88 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DreamTeam.Windows"
+        xmlns:ProfielEnProfieldata="clr-namespace:Model.ProfielEnProfieldata;assembly=Model" x:Class="DreamTeam.Windows.Profiel"
+        mc:Ignorable="d"
+        Title="Profiel" Height="1078" Width="1920" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/Assets/img/BackgroundSolid.png"/>
+    </Window.Background>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="1074" Width="1920">
+        <Border HorizontalAlignment="Left" Height="1063" VerticalAlignment="Center" Width="249" CornerRadius="0, 25, 25, 0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9CBD8"/>
+                    <GradientStop Color="#FFF288A4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Margin="0,0,0,10">
+                <Border HorizontalAlignment="Center" Height="79" Margin="0,31,0,0" VerticalAlignment="Top" Width="182" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button Content="Profiel" Click="Profielbutton" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070"/>
+                </Border>
+                <Border Margin="34,157,33,818" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="ButtonSearch" Content="Zoeken" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="ButtonSearch_Click"/>
+                </Border>
+                <Border Margin="34,288,33,688" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="MatchesButton" Content="Matches" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="MatchesButton_Click"/>
+                </Border>
+                <Border Margin="34,409,33,565" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1">
+                    <Button x:Name="GamesButton" Content="Games" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GamesButton_Click"/>
+                </Border>
+                <Border Margin="34,540,33,424" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                    <Button x:Name="LikesButton" Content="Likes" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="LikesButton_Click" Height="79"/>
+                </Border>
+                <Border Margin="34,671,33,302" BorderBrush="#FF707070" BorderThickness="0, 0, 0, 1" Height="79">
+                    <Button x:Name="GroupchatButton" Content="Groepschat" FontFamily="Montserrat" FontSize="30" HorizontalContentAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF707070" Click="GroupchatButton_Click" Height="79"/>
+                </Border>
+
+            </Grid>
+
+        </Border>
+        <Image x:Name="ProfileImage" HorizontalAlignment="Left" Height="291" Margin="381,66,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/ProfielFotoPlaceHolder.png"/>
+        <Border HorizontalAlignment="Left" Height="295" Margin="774,62,0,0" VerticalAlignment="Top" Width="541" CornerRadius="20, 20, 20, 20">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,2" StartPoint="0,1">
+                    <GradientStop Color="#FFF288A4"/>
+                    <GradientStop Color="#FFF2AEC1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button Content="Wijzigen" Background="White" Foreground="#FFF288A4" Click="instellingenProfiel" Grid.Column="1" FontFamily="Montserrat" FontSize="30" Margin="389,217,10,30"/>
+        </Border>
+        <Label x:Name="GamerNaamLabel" Content="Gamer naam" HorizontalAlignment="Left" Height="98" Margin="793,66,0,0" VerticalAlignment="Top" Width="470" FontSize="70" FontFamily="Montserrat" Foreground="White"/>
+        <Label x:Name="GamerUsername" Content="@UserID#123456" HorizontalAlignment="Left" Height="46" Margin="798,148,0,0" VerticalAlignment="Top" Width="465" IsEnabled="False" FontSize="25" FontWeight="Normal" Foreground="White" FontFamily="Open Sans"/>
+        <TextBlock x:Name="GamerBio" Text="Biografie" HorizontalAlignment="Left" Height="126" Margin="798,210,0,0" VerticalAlignment="Top" Width="226" Foreground="White" FontFamily="Open Sans" FontSize="20" Background="{x:Null}" TextWrapping="WrapWithOverflow"/>
+        <MediaElement x:Name="Post2" HorizontalAlignment="Left" Height="291" Margin="737,415,0,0" VerticalAlignment="Top" Width="296" Source="/Assets/img/GameMediaPlaceHolder.png" MouseEnter="Post2_MouseEnter" MouseLeave="Post2_MouseLeave"/>
+        <MediaElement x:Name="Post1" HorizontalAlignment="Left" Height="291" Margin="381,415,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png" MouseEnter="Post1_MouseEnter" MouseLeave="Post1_MouseLeave"/>
+        <MediaElement x:Name="Post3" HorizontalAlignment="Left" Height="291" Margin="1094,415,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png" MouseEnter="Post3_MouseEnter" MouseLeave="Post3_MouseLeave"/>
+        <MediaElement x:Name="Post4" HorizontalAlignment="Left" Height="291" Margin="381,729,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png" MouseEnter="Post4_MouseEnter" MouseLeave="Post4_MouseLeave"/>
+        <MediaElement x:Name="Post5" HorizontalAlignment="Left" Height="291" Margin="737,729,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png" MouseEnter="Post5_MouseEnter" MouseLeave="Post5_MouseLeave"/>
+        <MediaElement x:Name="Post6" HorizontalAlignment="Left" Height="291" Margin="1094,729,0,0" VerticalAlignment="Top" Width="295" Source="/Assets/img/GameMediaPlaceHolder.png" MouseEnter="Post6_MouseEnter" MouseLeave="Post6_MouseLeave"/>
+        <Button x:Name="MakePost" Content="Posten" Background="White" Foreground="#FFF288A4" Click="MakePost_Click" FontFamily="Montserrat" FontSize="30" Margin="1568,946,179,65"/>
+        <Border HorizontalAlignment="Left" Height="832" Margin="1458,62,0,0" VerticalAlignment="Top" Width="393" CornerRadius="10, 10, 10, 10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,0" StartPoint="0,1">
+                    <GradientStop Color="#FF6681D9"/>
+                    <GradientStop Color="#FF66A3D9" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label Content="Games:" HorizontalAlignment="Center" Height="60" Margin="0,39,0,0" VerticalAlignment="Top" Width="182" FontSize="40" Foreground="White" HorizontalContentAlignment="Center"/>
+        </Border>
+        <ListView Margin="0,228,86,200" Name="lvGames2" HorizontalAlignment="Right" Width="358" MouseUp="lvGames2_MouseUp">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Game" Width="179" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Rank" Width="179" DisplayMemberBinding="{Binding Rank}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="LogOutBtn" Content="" HorizontalAlignment="Left" Margin="10,897,0,0" VerticalAlignment="Top" Height="98" Width="78" BorderThickness="0,0,0,0" Click="LogOutClick">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="/Assets/img/Uitloggen.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="GamerNationaliteit" Content="Nationaliteit" HorizontalAlignment="Left" Height="36" Margin="1044,212,0,0" VerticalAlignment="Top" Width="513" Foreground="White" FontFamily="Open Sans" FontSize="20"/>
+    </Grid>
+</Window>
